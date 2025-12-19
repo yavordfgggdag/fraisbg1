@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SpaceX — Навигация</title>
+  <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+  <div class="logo">
+    <img src="https://i.postimg.cc/ncsxkK00/Open-AI-Playground-2025-12-18-at-21-19-54.png" alt="SpaceX Logo">
+  </div>
+  SpaceX
+</a>
+    <div class="navlinks">
+      <a href="index.html">Начало</a>
+      <a href="crew.html">Екипаж</a>
+      <a href="diagnostics.html">Диагностика</a>
+      <a href="status.html">Статус</a>
+      <a href="navigation.html">Навигация</a>
+      <a href="todo.html">Задачи</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="nav-header">
+    <h2>🛰 Навигация на космически кораб</h2>
+    <div class="status">
+      Скорост: <span id="speed">0</span> km/s |
+      Курс: <span id="course">0</span>°
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <div class="nav-main">
+    <!-- Space radar -->
+    <canvas id="radar" width="600" height="400"></canvas>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button onclick="turnLeft()">◀ Ляво</button>
+      <button onclick="accelerate()">▲ Ускорение</button>
+      <button onclick="turnRight()">▶ Дясно</button>
+      <button onclick="brake()">▼ Спирачка</button>
+      <button class="danger" onclick="resetShip()">⟳ Reset</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="navigation.js"></script>
+</body>
+</html>

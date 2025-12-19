@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Диагностика — Междузвезден код</title>
+<link rel="stylesheet" href="assets/cyber-purple.css">
+</head>
+<body>
+<div class="container">
+  <!-- Navbar с лого и навигация -->
+   <nav class="navbar">
+    <a class="brand" href="index.html">
+  <div class="logo">
+    <img src="https://i.postimg.cc/ncsxkK00/Open-AI-Playground-2025-12-18-at-21-19-54.png" alt="SpaceX Logo">
+  </div>
+  SpaceX
+</a>
+    <div class="navlinks">
+      <a href="index.html">Начало</a>
+      <a href="crew.html">Екипаж</a>
+      <a href="diagnostics.html"class="active">Диагностика</a>
+      <a href="status.html">Статус</a>
+      <a href="navigation.html" class=>Навигация</a>
+      <a href="todo.html">Задачи</a>
+    </div>
+  </nav>
+
+  <!-- Панели -->
+  <div class="panel">
+    <h3 class="mission-title">Диагностика на системите</h3>
+    <p class="small">Всички демонстрационни елементи са визуални.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Сензорна мрежа</h4>
+        <p class="small">Ниво връзка: <span id="sensor-status">100%</span></p>
+        <div class="progress-bar"><div id="sensor-bar" class="progress-fill"></div></div>
+      </div>
+
+      <div class="card">
+        <h4>Термални контури</h4>
+        <p class="small">Температура: <span id="temp-value">21°C</span></p>
+        <div class="progress-bar"><div id="temp-bar" class="progress-fill"></div></div>
+      </div>
+
+      <div class="card">
+        <h4>Енергия</h4>
+        <p class="small">Зареждане: <span id="energy-value">75%</span></p>
+        <div class="progress-bar"><div id="energy-bar" class="progress-fill"></div></div>
+      </div>
+
+      <div class="card">
+        <h4>Логове</h4>
+        <ul id="logs" class="small"></ul>
+      </div>
+
+      <div class="card">
+        <h4>Критични аларми</h4>
+        <ul id="alerts" class="small"></ul>
+      </div>
+
+      <div class="card">
+        <h4>Стабилност система</h4>
+        <canvas id="heartbeat" width="300" height="80"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

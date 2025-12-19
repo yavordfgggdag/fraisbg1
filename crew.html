@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpaceX — Екипаж</title>
+<link rel="stylesheet" href="assets/crew.css">
+</head>
+
+<body>
+<div class="container">
+
+  <nav class="navbar">
+    <a class="brand" href="index.html">
+  <div class="logo">
+    <img src="https://i.postimg.cc/ncsxkK00/Open-AI-Playground-2025-12-18-at-21-19-54.png" alt="SpaceX Logo">
+  </div>
+  SpaceX
+</a>
+    <div class="navlinks">
+      <a href="index.html">Начало</a>
+      <a href="crew.html" class="active">Екипаж</a>
+      <a href="diagnostics.html">Диагностика</a>
+      <a href="status.html">Статус</a>
+      <a href="navigation.html">Навигация</a>
+      <a href="todo.html">Задачи</a>
+    </div>
+  </nav>
+
+  <section class="panel">
+    <h2 class="mission-title">Екипаж</h2>
+    <p class="mission-sub">Активен персонал на мисията</p>
+
+    <!-- NEW: Toolbar за търсене/филтър -->
+    <div class="crew-toolbar">
+      <div class="input-shell">
+        <span class="input-icon">⌕</span>
+        <input id="crewSearch" type="search" placeholder="Търси член... (Ctrl/Cmd + K)" aria-label="Търсене в екипажа">
+      </div>
+      <select id="roleFilter" aria-label="Филтър по роля">
+        <option value="">Всички роли</option>
+        <option value="Капитан / Главнокомандващ">Капитан</option>
+        <option value="Навигатор">Навигатор</option>
+        <option value="Главен инженер">Главен инженер</option>
+        <option value="Главен медик">Главен медик</option>
+        <option value="Тактически офицер">Тактически офицер</option>
+        <option value="Научен офицер">Научен офицер</option>
+        <option value="Комуникации и криптография">Комуникации и криптография</option>
+        <option value="Пилот">Пилот</option>
+        <option value="Специалист по машинни системи">Специалист по машинни системи</option>
+        <option value="Офицер по сигурността">Офицер по сигурността</option>
+      </select>
+      <button class="btn-ghost btn-reset" id="resetFilters">Нулирай</button>
+    </div>
+
+    <div class="crew-grid">
+
+      <!-- Член 1 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/V7oicxP.jpg" alt="Алекс Иванов" class="crew-photo">
+        <h4>Алекс Иванов</h4>
+        <p class="small">Капитан / Главнокомандващ</p>
+        <a href="crew-member-alex-ivanov.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 2 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/gyu4k6G.jpg" alt="Даниела Петрова" class="crew-photo">
+        <h4>Даниела Петрова</h4>
+        <p class="small">Навигатор</p>
+        <a href="crew-member-daniela-petrova.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 3 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/tBHAdKp.jpg" alt="Мирослав Георгиев" class="crew-photo">
+        <h4>Мирослав Георгиев</h4>
+        <p class="small">Главен инженер</p>
+        <a href="crew-member-miroslav-georgiev.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 4 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/V1Jmvmh.jpg" alt="Елена Ангелова" class="crew-photo">
+        <h4>Елена Ангелова</h4>
+        <p class="small">Главен медик</p>
+        <a href="crew-member-elena-angelova.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 5 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/5aPjYzB.jpg" alt="Николай Стоянов" class="crew-photo">
+        <h4>Николай Стоянов</h4>
+        <p class="small">Тактически офицер</p>
+        <a href="crew-member-nikolay-stoyanov.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 6 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/1nMfTgL.jpg" alt="Виктория Миланова" class="crew-photo">
+        <h4>Виктория Миланова</h4>
+        <p class="small">Научен офицер</p>
+        <a href="crew-member-viktoria-milanova.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 7 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/0G2nq8F.jpg" alt="Ивайло Кръстев" class="crew-photo">
+        <h4>Ивайло Кръстев</h4>
+        <p class="small">Комуникации и криптография</p>
+        <a href="crew-member-ivaylo-krystev.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 8 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/4sQOZHp.jpg" alt="Радослав Пеев" class="crew-photo">
+        <h4>Радослав Пеев</h4>
+        <p class="small">Пилот</p>
+        <a href="crew-member-radoslav-peev.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 9 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/2YkF7iJ.jpg" alt="Стефания Костова" class="crew-photo">
+        <h4>Стефания Костова</h4>
+        <p class="small">Офицер по сигурността</p>
+        <a href="crew-member-stefania-kostova.html" class="btn">Виж повече</a>
+      </div>
+
+      <!-- Член 10 -->
+      <div class="card crew-item">
+        <img src="https://i.imgur.com/3aPpYjV.jpg" alt="Калоян Марков" class="crew-photo">
+        <h4>Калоян Марков</h4>
+        <p class="small">Специалист по машинни системи</p>
+        <a href="crew-member-kaloyan-markov.html" class="btn">Виж повече</a>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- NEW: Quick View модал -->
+<div class="modal-backdrop" id="crewModal" aria-hidden="true">
+  <div class="modal-shell card">
+    <button class="modal-close btn-ghost" id="closeModal" aria-label="Затвори">✕</button>
+    <div class="modal-photo-wrap">
+      <img id="modalPhoto" class="modal-photo" alt="Crew portrait">
+    </div>
+    <div class="modal-info">
+      <div class="modal-header">
+        <h3 id="modalName"></h3>
+        <span id="modalStatus" class="status-badge">Online</span>
+      </div>
+      <p id="modalRole" class="small"></p>
+      <p id="modalBio" class="lead"></p>
+      <div class="modal-meta">
+        <span class="meta-chip" id="modalLocation">Deck</span>
+        <span class="meta-chip" id="modalHours">Часове</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/crew.js"></script>
+</body>
+</html>

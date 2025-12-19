@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SpaceX — Контролен Панел</title>
+ <link rel="stylesheet" href="assets/cyber.css">
+</head>
+<body>
+<div class="container">
+   <nav class="navbar">
+    <a class="brand" href="index.html">
+  <div class="logo">
+    <img src="https://i.postimg.cc/ncsxkK00/Open-AI-Playground-2025-12-18-at-21-19-54.png" alt="SpaceX Logo">
+  </div>
+  SpaceX
+</a>
+    <div class="navlinks">
+      <a href="index.html"class="active">Начало</a>
+      <a href="crew.html">Екипаж</a>
+      <a href="diagnostics.html">Диагностика</a>
+      <a href="status.html">Статус</a>
+      <a href="navigation.html">Навигация</a>
+      <a href="todo.html">Задачи</a>
+    </div>
+  </nav>
+
+  <section class="hero panel">
+
+    <div>
+      <div class="mission-title">Начало</div>
+      <div class="mission-sub">Space Control</div>
+
+      <div class="grid">
+
+        <div class="card">
+          <h4 class="h4">Енергийно потребление</h4>
+          <canvas id="energyChart" height="120"></canvas>
+        </div>
+
+        <div class="card">
+          <h4 class="h4">Ресурси</h4>
+
+          <div class="progress">
+            <div class="small">Кислород</div>
+            <div class="bar"><i id="bar-oxygen"></i></div>
+            <button class="btn btn-mini" id="add-oxygen">+ O₂</button>
+          </div>
+
+          <div class="progress">
+            <div class="small">Гориво</div>
+            <div class="bar"><i id="bar-fuel"></i></div>
+            <button class="btn btn-mini" id="add-fuel">+ Fuel</button>
+          </div>
+
+          <div class="progress critical">
+            <div class="small">Енергия</div>
+            <div class="bar"><i id="bar-energy"></i></div>
+            <button class="btn btn-mini" id="add-energy">+ Energy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="h4">Контрол</h4>
+          <div class="control-buttons">
+            <button class="btn" id="btn-start">▶ Стартирай</button>
+            <button class="btn btn-ghost" id="btn-stop">■ Спри</button>
+            <button class="btn" id="btn-boost">⚡ Boost</button>
+            <button class="btn btn-ghost" id="btn-standard">♻ Стандартен</button>
+            <button class="btn btn-ghost" id="btn-emergency">🛑 Аварийно Спиране</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <aside class="panel sidebar">
+      <div class="meta">
+        <strong id="mission-status">Активна</strong>
+        <div class="led pulse" id="led-status"></div>
+      </div>
+
+      <div class="small">Система Хронология</div>
+      <div id="log" class="log"></div>
+    </aside>
+
+  </section>
+</div>
+
+<div id="red-alert"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>
